@@ -5,20 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MATHUB</title>
 <style>
+  /* Paleta tomada del logo institucional */
   :root {
-    --ink: #1B1F3B;
-    --muted: #55597a;
-    --paper: #FFFFFF;
-    --line: #D9DCEC;
-    --grid: #E9EBF6;
-    --focus: #7C3AED;
+    --rojo: #A91D22;
+    --rojo-oscuro: #8A171B;      /* hover del rojo */
+    --rojo-suave: #FBE9EA;       /* variante clara del rojo */
+    --azul: #101828;
+    --blanco: #FFFFFF;
+    --gris: #D0D5DD;
+    --gris-claro: #F2F4F7;       /* variante clara del gris: fondo general */
+    --grid: #E4E7EC;             /* cuadrícula del fondo */
+    --muted: #475467;            /* texto secundario */
+    --line: #D0D5DD;
   }
   * { box-sizing: border-box; }
   body {
     margin: 0;
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-    color: var(--ink);
-    background-color: var(--paper);
+    color: var(--azul);
+    background-color: var(--gris-claro);
     background-image:
       linear-gradient(var(--grid) 1px, transparent 1px),
       linear-gradient(90deg, var(--grid) 1px, transparent 1px);
@@ -26,33 +31,45 @@
     line-height: 1.5;
   }
   .wrap { max-width: 1040px; margin: 0 auto; padding: 24px 16px 56px; }
-  header { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; flex-wrap: wrap; }
+
+  header {
+    display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap;
+    background: var(--azul); color: var(--blanco);
+    padding: 20px 24px; border-radius: 12px; border-bottom: 6px solid var(--rojo);
+  }
   .brand { display: flex; align-items: center; justify-content: flex-start; gap: 16px; }
-  .header-logo { height: 72px; width: auto; border-radius: 8px; flex-shrink: 0; background: var(--paper); }
+  .header-logo { height: 72px; width: auto; border-radius: 8px; flex-shrink: 0; background: var(--blanco); }
   h1 { margin: 0; font-size: clamp(2.2rem, 6vw, 3.4rem); letter-spacing: -0.02em; line-height: 1.05; }
-  .sub { margin: 8px 0 0; color: var(--muted); max-width: 46ch; }
-  .lang { display: flex; border: 2px solid var(--ink); border-radius: 8px; overflow: hidden; background: var(--paper); }
-  .lang button { border: 0; background: transparent; padding: 6px 14px; font: inherit; font-weight: 600; cursor: pointer; color: var(--ink); }
-  .lang button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
-  .filters { margin: 28px 0 8px; padding: 14px 16px; background: var(--paper); border: 1px solid var(--line); border-radius: 10px; display: grid; gap: 12px; }
+  .sub { margin: 8px 0 0; color: var(--gris); max-width: 46ch; }
+
+  .lang { display: flex; border: 2px solid var(--blanco); border-radius: 8px; overflow: hidden; }
+  .lang button { border: 0; background: transparent; padding: 6px 14px; font: inherit; font-weight: 600; cursor: pointer; color: var(--blanco); }
+  .lang button[aria-pressed="true"] { background: var(--rojo); color: var(--blanco); }
+
+  .filters { margin: 24px 0 8px; padding: 14px 16px; background: var(--blanco); border: 1px solid var(--line); border-radius: 10px; display: grid; gap: 12px; }
   .group { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
   .group > span { font-weight: 600; min-width: 92px; }
-  .chip { border: 1.5px solid var(--line); background: var(--paper); border-radius: 999px; padding: 5px 14px; font: inherit; cursor: pointer; color: var(--ink); display: inline-flex; align-items: center; gap: 7px; }
-  .chip .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--c, var(--ink)); }
-  .chip[aria-pressed="true"] { border-color: var(--ink); background: var(--ink); color: var(--paper); }
-  button:focus-visible, a:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+  .chip { border: 1.5px solid var(--line); background: var(--blanco); border-radius: 999px; padding: 5px 14px; font: inherit; cursor: pointer; color: var(--azul); display: inline-flex; align-items: center; gap: 7px; }
+  .chip:hover { border-color: var(--azul); }
+  .chip .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--c, var(--azul)); }
+  .chip[aria-pressed="true"] { border-color: var(--azul); background: var(--azul); color: var(--blanco); }
+
+  button:focus-visible, a:focus-visible { outline: 3px solid var(--rojo); outline-offset: 2px; }
+  header button:focus-visible { outline-color: var(--blanco); }
+
   .count { margin: 14px 0; color: var(--muted); }
   .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
-  .card { background: var(--paper); border: 1px solid var(--line); border-left: 8px solid var(--c, var(--ink)); border-radius: 10px; padding: 16px; display: flex; flex-direction: column; gap: 10px; }
+  .card { background: var(--blanco); border: 1px solid var(--line); border-left: 8px solid var(--c, var(--azul)); border-radius: 10px; padding: 16px; display: flex; flex-direction: column; gap: 10px; }
   .card h2 { margin: 0; font-size: 1.25rem; }
   .card p { margin: 0; color: var(--muted); flex: 1; }
   .pills { display: flex; flex-wrap: wrap; gap: 6px; }
   .pill { font-size: 0.82rem; padding: 2px 10px; border-radius: 999px; border: 1px solid var(--line); display: inline-flex; align-items: center; gap: 6px; }
-  .pill .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--c, var(--ink)); }
+  .pill .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--c, var(--azul)); }
+  .pill.materia { background: var(--rojo-suave); border-color: var(--rojo-suave); color: var(--rojo); font-weight: 600; }
   .ads { font-size: 0.82rem; color: var(--muted); }
-  .visit { align-self: flex-start; text-decoration: none; background: var(--ink); color: var(--paper); padding: 8px 16px; border-radius: 8px; font-weight: 600; }
-  .visit:hover { background: #2d3363; }
-  .msg { background: var(--paper); border: 1px solid var(--line); border-radius: 10px; padding: 16px; }
+  .visit { align-self: flex-start; text-decoration: none; background: var(--rojo); color: var(--blanco); padding: 8px 16px; border-radius: 8px; font-weight: 600; }
+  .visit:hover { background: var(--rojo-oscuro); }
+  .msg { background: var(--blanco); border: 1px solid var(--line); border-radius: 10px; padding: 16px; }
   footer { margin-top: 36px; color: var(--muted); font-size: 0.9rem; }
 </style>
 </head>
@@ -75,6 +92,7 @@
   </header>
 
   <section class="filters" aria-label="Filtros">
+    <div class="group"><span id="lbl-subject"></span><div class="group" id="subjects"></div></div>
     <div class="group"><span id="lbl-level"></span><div class="group" id="levels"></div></div>
     <div class="group"><span id="lbl-lang"></span><div class="group" id="langs"></div></div>
   </section>
@@ -87,26 +105,26 @@
 <script>
 const T = {
   es: {
-    sub: "Plataformas gratuitas para aprender matemáticas, de primaria a la universidad.",
-    level: "Nivel", lang: "Idioma", all: "Todos", visit: "Ir a la plataforma",
+    sub: "Plataformas gratuitas para aprender matemáticas e inglés, de preescolar a la universidad.",
+    subject: "Materia", level: "Nivel", lang: "Idioma", all: "Todos", visit: "Ir a la plataforma",
     ads: "Muestra publicidad", count: n => n + (n === 1 ? " plataforma" : " plataformas"),
-    none: "Ninguna plataforma coincide con estos filtros. Prueba con otro nivel o idioma.",
+    none: "Ninguna plataforma coincide con estos filtros. Prueba con otra materia, nivel o idioma.",
     error: "No se pudo cargar plataformas.json. Abre la página desde su dirección en GitHub Pages, no como archivo en tu computador.",
     foot: "MATHUB solo te lleva a cada plataforma; el contenido pertenece a sus autores.",
     names: { es: "Español", en: "Inglés" }
   },
   en: {
-    sub: "Free platforms to learn math, from primary school to university.",
-    level: "Level", lang: "Language", all: "All", visit: "Visit platform",
+    sub: "Free platforms to learn math and English, from preschool to university.",
+    subject: "Subject", level: "Level", lang: "Language", all: "All", visit: "Visit platform",
     ads: "Shows ads", count: n => n + (n === 1 ? " platform" : " platforms"),
-    none: "No platform matches these filters. Try another level or language.",
+    none: "No platform matches these filters. Try another subject, level or language.",
     error: "Could not load plataformas.json. Open the page from its GitHub Pages address, not as a file on your computer.",
     foot: "MATHUB only links to each platform; the content belongs to its authors.",
     names: { es: "Spanish", en: "English" }
   }
 };
 
-let data = null, lang = "es", fLevel = "all", fLang = "all";
+let data = null, lang = "es", fSubject = "all", fLevel = "all", fLang = "all";
 const $ = id => document.getElementById(id);
 
 function chip(label, pressed, onClick, color) {
@@ -123,11 +141,17 @@ function render() {
   const t = T[lang];
   document.documentElement.lang = lang;
   $("sub").textContent = t.sub;
+  $("lbl-subject").textContent = t.subject;
   $("lbl-level").textContent = t.level;
   $("lbl-lang").textContent = t.lang;
   $("foot").textContent = t.foot;
   $("btn-es").setAttribute("aria-pressed", lang === "es");
   $("btn-en").setAttribute("aria-pressed", lang === "en");
+
+  const subjects = $("subjects"); subjects.innerHTML = "";
+  subjects.append(chip(t.all, fSubject === "all", () => { fSubject = "all"; render(); }));
+  for (const [k, v] of Object.entries(data.materias))
+    subjects.append(chip(v[lang], fSubject === k, () => { fSubject = k; render(); }));
 
   const levels = $("levels"); levels.innerHTML = "";
   levels.append(chip(t.all, fLevel === "all", () => { fLevel = "all"; render(); }));
@@ -140,6 +164,7 @@ function render() {
     langs.append(chip(t.names[k], fLang === k, () => { fLang = k; render(); }));
 
   const list = data.plataformas.filter(p =>
+    (fSubject === "all" || (p.materia || ["matematicas"]).includes(fSubject)) &&
     (fLevel === "all" || p.niveles.includes(fLevel)) &&
     (fLang === "all" || p.idiomas.includes(fLang)));
 
@@ -157,6 +182,11 @@ function render() {
     const d = document.createElement("p"); d.textContent = p.descripcion[lang];
 
     const pills = document.createElement("div"); pills.className = "pills";
+    for (const m of (p.materia || ["matematicas"])) {
+      const s = document.createElement("span"); s.className = "pill materia";
+      s.textContent = data.materias[m][lang];
+      pills.append(s);
+    }
     for (const k of p.niveles) {
       const s = document.createElement("span"); s.className = "pill";
       s.style.setProperty("--c", data.niveles[k].color);

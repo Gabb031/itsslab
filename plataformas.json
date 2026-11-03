@@ -1,24 +1,39 @@
 {
   "niveles": {
+    "preescolar": {
+      "es": "Preescolar",
+      "en": "Preschool",
+      "color": "#A91D22"
+    },
     "primaria": {
       "es": "Primaria",
       "en": "Primary",
-      "color": "#FF6B6B"
+      "color": "#D4545A"
     },
     "secundaria": {
       "es": "Secundaria",
       "en": "Middle school",
-      "color": "#4D96FF"
+      "color": "#667085"
     },
     "bachillerato": {
       "es": "Bachillerato",
       "en": "High school",
-      "color": "#6BCB77"
+      "color": "#344054"
     },
     "universidad": {
       "es": "Universidad",
       "en": "University",
-      "color": "#7C3AED"
+      "color": "#101828"
+    }
+  },
+  "materias": {
+    "matematicas": {
+      "es": "Matemáticas",
+      "en": "Math"
+    },
+    "ingles": {
+      "es": "Inglés",
+      "en": "English"
     }
   },
   "plataformas": [
@@ -26,6 +41,9 @@
       "id": "khan-academy",
       "nombre": "Khan Academy",
       "url": "https://www.khanacademy.org/math",
+      "materia": [
+        "matematicas"
+      ],
       "niveles": [
         "primaria",
         "secundaria",
@@ -48,6 +66,9 @@
       "id": "geogebra",
       "nombre": "GeoGebra",
       "url": "https://www.geogebra.org",
+      "materia": [
+        "matematicas"
+      ],
       "niveles": [
         "primaria",
         "secundaria",
@@ -70,6 +91,9 @@
       "id": "desmos",
       "nombre": "Desmos",
       "url": "https://www.desmos.com",
+      "materia": [
+        "matematicas"
+      ],
       "niveles": [
         "secundaria",
         "bachillerato",
@@ -91,6 +115,9 @@
       "id": "phet",
       "nombre": "PhET Simulaciones",
       "url": "https://phet.colorado.edu",
+      "materia": [
+        "matematicas"
+      ],
       "niveles": [
         "primaria",
         "secundaria",
@@ -113,6 +140,9 @@
       "id": "mit-ocw",
       "nombre": "MIT OpenCourseWare",
       "url": "https://ocw.mit.edu",
+      "materia": [
+        "matematicas"
+      ],
       "niveles": [
         "universidad"
       ],
@@ -131,6 +161,9 @@
       "id": "openstax",
       "nombre": "OpenStax",
       "url": "https://openstax.org",
+      "materia": [
+        "matematicas"
+      ],
       "niveles": [
         "bachillerato",
         "universidad"
@@ -151,6 +184,9 @@
       "id": "pauls-online-math-notes",
       "nombre": "Paul's Online Math Notes",
       "url": "https://tutorial.math.lamar.edu",
+      "materia": [
+        "matematicas"
+      ],
       "niveles": [
         "universidad"
       ],
@@ -169,6 +205,9 @@
       "id": "mathigon",
       "nombre": "Mathigon",
       "url": "https://mathigon.org",
+      "materia": [
+        "matematicas"
+      ],
       "niveles": [
         "secundaria",
         "bachillerato"
@@ -189,6 +228,9 @@
       "id": "colombia-aprende",
       "nombre": "Colombia Aprende",
       "url": "https://colombiaaprende.edu.co",
+      "materia": [
+        "matematicas"
+      ],
       "niveles": [
         "primaria",
         "secundaria",
@@ -209,6 +251,9 @@
       "id": "math-is-fun",
       "nombre": "Math is Fun",
       "url": "https://www.mathsisfun.com",
+      "materia": [
+        "matematicas"
+      ],
       "niveles": [
         "primaria",
         "secundaria"
