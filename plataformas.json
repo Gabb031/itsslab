@@ -60,7 +60,8 @@
       },
       "gratis_verificado": true,
       "publicidad": false,
-      "idiomas_verificado": true
+      "idiomas_verificado": true,
+      "publicidad_verificado": true
     },
     {
       "id": "geogebra",
@@ -85,7 +86,8 @@
       },
       "gratis_verificado": true,
       "publicidad": false,
-      "idiomas_verificado": true
+      "idiomas_verificado": true,
+      "publicidad_verificado": true
     },
     {
       "id": "desmos",
@@ -109,7 +111,8 @@
       },
       "gratis_verificado": true,
       "publicidad": false,
-      "idiomas_verificado": true
+      "idiomas_verificado": true,
+      "publicidad_verificado": true
     },
     {
       "id": "phet",
@@ -134,7 +137,8 @@
       },
       "gratis_verificado": true,
       "publicidad": false,
-      "idiomas_verificado": true
+      "idiomas_verificado": true,
+      "publicidad_verificado": true
     },
     {
       "id": "mit-ocw",
@@ -155,7 +159,8 @@
       },
       "gratis_verificado": true,
       "publicidad": false,
-      "idiomas_verificado": true
+      "idiomas_verificado": true,
+      "publicidad_verificado": true
     },
     {
       "id": "openstax",
@@ -178,7 +183,8 @@
       },
       "gratis_verificado": true,
       "publicidad": false,
-      "idiomas_verificado": true
+      "idiomas_verificado": true,
+      "publicidad_verificado": true
     },
     {
       "id": "pauls-online-math-notes",
@@ -199,7 +205,8 @@
       },
       "gratis_verificado": true,
       "publicidad": false,
-      "idiomas_verificado": true
+      "idiomas_verificado": true,
+      "publicidad_verificado": true
     },
     {
       "id": "mathigon",
@@ -222,16 +229,19 @@
       },
       "gratis_verificado": true,
       "publicidad": false,
-      "idiomas_verificado": true
+      "idiomas_verificado": true,
+      "publicidad_verificado": true
     },
     {
       "id": "colombia-aprende",
       "nombre": "Colombia Aprende",
       "url": "https://colombiaaprende.edu.co",
       "materia": [
-        "matematicas"
+        "matematicas",
+        "ingles"
       ],
       "niveles": [
+        "preescolar",
         "primaria",
         "secundaria",
         "bachillerato"
@@ -240,12 +250,13 @@
         "es"
       ],
       "descripcion": {
-        "es": "Portal educativo del Ministerio de Educación de Colombia con recursos por grado.",
-        "en": "Colombian Ministry of Education portal with resources by grade."
+        "es": "Portal educativo del Ministerio de Educación de Colombia con recursos por grado, desde primera infancia y preescolar.",
+        "en": "Colombian Ministry of Education portal with resources by grade, from early childhood and preschool."
       },
       "gratis_verificado": true,
       "publicidad": false,
-      "idiomas_verificado": true
+      "idiomas_verificado": true,
+      "publicidad_verificado": true
     },
     {
       "id": "math-is-fun",
@@ -267,7 +278,294 @@
       },
       "gratis_verificado": true,
       "publicidad": true,
-      "idiomas_verificado": true
+      "idiomas_verificado": true,
+      "publicidad_verificado": true
+    },
+    {
+      "id": "khan-academy-kids",
+      "nombre": "Khan Academy Kids",
+      "url": "https://www.khankids.org",
+      "materia": [
+        "matematicas"
+      ],
+      "niveles": [
+        "preescolar",
+        "primaria"
+      ],
+      "idiomas": [
+        "en"
+      ],
+      "descripcion": {
+        "es": "Juegos, libros y actividades de matemáticas y lectura para niños de 2 a 8 años. Interfaz en inglés; incluye libros en español.",
+        "en": "Games, books and activities for math and reading, for children ages 2 to 8. Interface in English; includes Spanish books."
+      },
+      "gratis_verificado": true,
+      "publicidad": false,
+      "idiomas_verificado": true,
+      "publicidad_verificado": true
+    },
+    {
+      "id": "pbs-kids-games",
+      "nombre": "PBS KIDS Games",
+      "url": "https://pbskids.org/games",
+      "materia": [
+        "matematicas"
+      ],
+      "niveles": [
+        "preescolar",
+        "primaria"
+      ],
+      "idiomas": [
+        "en"
+      ],
+      "descripcion": {
+        "es": "Más de 280 juegos educativos con personajes de PBS KIDS, para niños de 2 a 8 años. Solo en inglés.",
+        "en": "Over 280 educational games with PBS KIDS characters, for children ages 2 to 8."
+      },
+      "gratis_verificado": true,
+      "publicidad": false,
+      "idiomas_verificado": true,
+      "publicidad_verificado": true
+    },
+    {
+      "id": "learnenglish-kids",
+      "nombre": "LearnEnglish Kids (British Council)",
+      "url": "https://learnenglishkids.britishcouncil.org",
+      "materia": [
+        "ingles"
+      ],
+      "niveles": [
+        "preescolar",
+        "primaria"
+      ],
+      "idiomas": [
+        "en"
+      ],
+      "descripcion": {
+        "es": "Juegos, canciones, cuentos y videos para aprender inglés, para niños de 5 a 12 años.",
+        "en": "Games, songs, stories and videos for learning English, for children ages 5 to 12."
+      },
+      "gratis_verificado": true,
+      "publicidad": false,
+      "idiomas_verificado": true,
+      "publicidad_verificado": false
+    },
+    {
+      "id": "arbol-abc",
+      "nombre": "Árbol ABC",
+      "url": "https://arbolabc.com",
+      "materia": [
+        "matematicas",
+        "ingles"
+      ],
+      "niveles": [
+        "preescolar",
+        "primaria"
+      ],
+      "idiomas": [
+        "es"
+      ],
+      "descripcion": {
+        "es": "Más de 500 juegos educativos en español para niños de 3 a 10 años: matemáticas, lenguaje, inglés y lógica.",
+        "en": "Over 500 educational games in Spanish for children ages 3 to 10: math, language, English and logic."
+      },
+      "gratis_verificado": true,
+      "publicidad": false,
+      "idiomas_verificado": true,
+      "publicidad_verificado": false
+    },
+    {
+      "id": "cokitos",
+      "nombre": "Cokitos",
+      "url": "https://www.cokitos.com",
+      "materia": [
+        "matematicas"
+      ],
+      "niveles": [
+        "preescolar",
+        "primaria"
+      ],
+      "idiomas": [
+        "es"
+      ],
+      "descripcion": {
+        "es": "Juegos educativos en línea en español para aprender y repasar, con actividades de matemáticas para Infantil.",
+        "en": "Online educational games in Spanish for learning and reviewing, with math activities for early childhood."
+      },
+      "gratis_verificado": true,
+      "publicidad": false,
+      "idiomas_verificado": true,
+      "publicidad_verificado": false
+    },
+    {
+      "id": "nrich",
+      "nombre": "NRICH (Universidad de Cambridge)",
+      "url": "https://nrich.maths.org",
+      "materia": [
+        "matematicas"
+      ],
+      "niveles": [
+        "preescolar",
+        "primaria",
+        "secundaria",
+        "bachillerato"
+      ],
+      "idiomas": [
+        "en"
+      ],
+      "descripcion": {
+        "es": "Miles de problemas, juegos y actividades de matemáticas gratuitos para edades de 3 a 18 años.",
+        "en": "Thousands of free math problems, games and activities for ages 3 to 18."
+      },
+      "gratis_verificado": true,
+      "publicidad": false,
+      "idiomas_verificado": true,
+      "publicidad_verificado": true
+    },
+    {
+      "id": "zearn",
+      "nombre": "Zearn Math",
+      "url": "https://www.zearn.org",
+      "materia": [
+        "matematicas"
+      ],
+      "niveles": [
+        "primaria",
+        "secundaria"
+      ],
+      "idiomas": [
+        "en"
+      ],
+      "descripcion": {
+        "es": "Más de 1.000 lecciones digitales de matemáticas de kínder a 8.º grado, gratis para familias y docentes. Sin publicidad.",
+        "en": "Over 1,000 digital math lessons for grades K to 8, free for families and teachers. No ads."
+      },
+      "gratis_verificado": true,
+      "publicidad": false,
+      "idiomas_verificado": true,
+      "publicidad_verificado": true
+    },
+    {
+      "id": "ck12",
+      "nombre": "CK-12",
+      "url": "https://www.ck12.org",
+      "materia": [
+        "matematicas"
+      ],
+      "niveles": [
+        "primaria",
+        "secundaria",
+        "bachillerato",
+        "universidad"
+      ],
+      "idiomas": [
+        "es",
+        "en"
+      ],
+      "descripcion": {
+        "es": "Libros de texto digitales y práctica adaptativa de matemáticas, sin costo. Algunos títulos están en español.",
+        "en": "Free digital math textbooks and adaptive practice. Some titles are available in Spanish."
+      },
+      "gratis_verificado": true,
+      "publicidad": false,
+      "idiomas_verificado": true,
+      "publicidad_verificado": false
+    },
+    {
+      "id": "red-descartes",
+      "nombre": "Proyecto Descartes",
+      "url": "https://proyectodescartes.org",
+      "materia": [
+        "matematicas"
+      ],
+      "niveles": [
+        "preescolar",
+        "primaria",
+        "secundaria",
+        "bachillerato",
+        "universidad"
+      ],
+      "idiomas": [
+        "es"
+      ],
+      "descripcion": {
+        "es": "Recursos interactivos de matemáticas en español, de uso libre, desde Infantil hasta la universidad.",
+        "en": "Free interactive math resources in Spanish, from early childhood to university."
+      },
+      "gratis_verificado": true,
+      "publicidad": false,
+      "idiomas_verificado": true,
+      "publicidad_verificado": false
+    },
+    {
+      "id": "bbc-learning-english",
+      "nombre": "BBC Learning English",
+      "url": "https://www.bbc.co.uk/learningenglish",
+      "materia": [
+        "ingles"
+      ],
+      "niveles": [
+        "secundaria",
+        "bachillerato",
+        "universidad"
+      ],
+      "idiomas": [
+        "en"
+      ],
+      "descripcion": {
+        "es": "Lecciones gratuitas de inglés en video, audio y texto, de nivel básico a avanzado, sin registro.",
+        "en": "Free English lessons in video, audio and text, from basic to advanced, no registration."
+      },
+      "gratis_verificado": true,
+      "publicidad": false,
+      "idiomas_verificado": true,
+      "publicidad_verificado": false
+    },
+    {
+      "id": "learnenglish-teens",
+      "nombre": "LearnEnglish Teens (British Council)",
+      "url": "https://learnenglishteens.britishcouncil.org",
+      "materia": [
+        "ingles"
+      ],
+      "niveles": [
+        "secundaria",
+        "bachillerato"
+      ],
+      "idiomas": [
+        "en"
+      ],
+      "descripcion": {
+        "es": "Recursos gratuitos de inglés para jóvenes de 13 a 17 años: gramática, vocabulario, lectura, escucha y habla.",
+        "en": "Free English resources for ages 13 to 17: grammar, vocabulary, reading, listening and speaking."
+      },
+      "gratis_verificado": true,
+      "publicidad": false,
+      "idiomas_verificado": true,
+      "publicidad_verificado": false
+    },
+    {
+      "id": "learnenglish-british-council",
+      "nombre": "LearnEnglish (British Council)",
+      "url": "https://learnenglish.britishcouncil.org",
+      "materia": [
+        "ingles"
+      ],
+      "niveles": [
+        "bachillerato",
+        "universidad"
+      ],
+      "idiomas": [
+        "en"
+      ],
+      "descripcion": {
+        "es": "Recursos gratuitos de inglés del nivel A1 al C1: escucha, lectura, escritura, habla y gramática. Los cursos de pago son aparte.",
+        "en": "Free English resources from A1 to C1: listening, reading, writing, speaking and grammar. Paid courses are separate."
+      },
+      "gratis_verificado": true,
+      "publicidad": false,
+      "idiomas_verificado": true,
+      "publicidad_verificado": false
     }
   ]
 }
